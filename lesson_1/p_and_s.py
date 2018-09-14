@@ -1,3 +1,4 @@
+# p_and_s.py
 def mul(x, y):
     return x * y
 

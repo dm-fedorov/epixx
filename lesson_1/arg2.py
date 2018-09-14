@@ -1,3 +1,4 @@
+# arg2.py
 def div(a, b):
     return a / b
 

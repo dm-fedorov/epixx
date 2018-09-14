@@ -1,4 +1,5 @@
-x = 50 
+# var2.py
+x = 50
 
 def func(): 
     global x 
