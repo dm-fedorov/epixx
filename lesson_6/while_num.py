@@ -1,5 +1,4 @@
 # while_num.py
-text = ""
 while True:
     text = input("Введите число или стоп для выхода: ")
     if text == "стоп":
