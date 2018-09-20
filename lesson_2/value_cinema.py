@@ -1,5 +1,4 @@
 # value_cinema.py
-
 def value_cinema(hall, session, num):
     """ Определяет стоимость билетов в кино """
     # итоговая стоимость
@@ -12,6 +11,8 @@ def value_cinema(hall, session, num):
             result = 350
         elif session == 20:
             result = 450
+        else:
+            result = 0
     elif hall == "Синий":
         if session == 10:
             result = 250
@@ -19,17 +20,21 @@ def value_cinema(hall, session, num):
             result = 350
         elif session == 16:
             result = 350
+        else:
+            result = 0
     elif hall == "Голубой":
         if session == 10:
             result = 350
         elif session == 14:
             result = 450
         elif session == 18:
-            result = 450        
+            result = 450
+        else:
+            result = 0
     # количество билетов
     result = num * result
     # скидка
-    if 5 < num < 10:
+    if 5 <= num <= 10:
         result = result-result*0.05
     elif num > 10:
         result = result-result*0.1
