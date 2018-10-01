@@ -1,9 +1,9 @@
 # count_num.py
-s='aa3aBbb6ccc'
-total=0
+s = 'aa3aBbb6ccc'
+total = 0
 for i in range(len(s)):
     if s[i].isalpha():
         continue # пропускаем шаг
-    total=total+int(s[i])
+    total += int(s[i])
 
-print ("Сумма цифр:", total)
+print("Сумма цифр:", total)
