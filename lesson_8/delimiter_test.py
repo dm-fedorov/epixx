@@ -9,9 +9,6 @@ def check_delimiter(s):
 
     >>> check_delimiter("( ) { [ ] ( ] { } }")    
     False
-
-    >>> check_delimiter("( ) ) [ ] ( ] { } }")    
-    False
     
     '''
 
