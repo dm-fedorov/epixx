@@ -1,5 +1,5 @@
 # keywords.py
-def total (initial=5, *numbers, **keywords):    
+def total(initial=5, *numbers, **keywords):    
     count = initial 
     for number in numbers: 
         count += number 
@@ -8,6 +8,7 @@ def total (initial=5, *numbers, **keywords):
     return count 
 
 print(total(10, 1, 2, 3, vegetables=50, fruits=100)) 
+print(total(2, 1)) # initial=2
     
 
 
