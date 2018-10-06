@@ -7,4 +7,5 @@ def get_int(msg):
         except ValueError:
             print("Error converting to a number")
 
-print(get_int("Enter: "))
+if __name__ == "__main__":
+    print(get_int("Enter: "))

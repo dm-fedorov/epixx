@@ -1,12 +1,16 @@
 # number_reader.py
-import json
+def reader(filename):
+    '''
+    Чтение содержимого json файла 
+    '''
+    import json    
+    try:
+        with open(filename) as f_obj:
+            numbers = json.load(f_obj)
+        return numbers
+    except Exception as e:
+        return e
 
-filename = 'numbers.json'
-
-try:
-    with open(filename) as f_obj:
-        numbers = json.load(f_obj)
-
-    print(numbers)
-except:
-    print("Упс. Что-то пошло не так.")
+if __name__ == "__main__":    
+    print(reader('numbers.json'))
+    

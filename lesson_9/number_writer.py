@@ -1,11 +1,12 @@
 # number_writer.py
-import json
-numbers = [2, 3, 5, 7, 11, 13]
+def writer(filename, numbers):    
+    import json    
+    try:
+        with open(filename, 'w') as f_obj:
+            json.dump(numbers, f_obj)
+    except Exception as e:
+        return e
 
-filename = 'numbers.json'
-
-try:
-    with open(filename, 'w') as f_obj:
-        json.dump(numbers, f_obj)
-except:
-    print("Что-то пошло не так...")
+if __name__ == "__main__":    
+    writer('numbers.json', [1, 3, 4, 5])
+    
