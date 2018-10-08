@@ -1,10 +1,9 @@
-# tutchev.py
-import urllib.request
-
+# tutchev_blank.py
 def get_html(text, img):    
     '''
     Функция для генерации html-документа.
     '''
+    import urllib.request
     try:
         # здесь код
 
