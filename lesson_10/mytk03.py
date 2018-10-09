@@ -1,3 +1,4 @@
+# mytk03.py
 import tkinter
 window = tkinter.Tk()
 data = tkinter.StringVar()

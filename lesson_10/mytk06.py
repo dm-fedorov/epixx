@@ -1,3 +1,4 @@
+# mytk06.py
 import tkinter
 window = tkinter.Tk()
 

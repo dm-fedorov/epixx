@@ -1,15 +1,16 @@
+# mytk07.py
 import tkinter
 
-# The controller.
+# The controller
 def click():
     counter.set(counter.get() + 1)
 
 if __name__ == '__main__':
     window = tkinter.Tk()
-    # The model.
+    # The model
     counter = tkinter.IntVar()
     counter.set(0)
-    # The views.
+    # The views
     frame = tkinter.Frame(window)
     frame.pack()
 

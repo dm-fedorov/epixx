@@ -1,18 +1,19 @@
+# mytk08.py
 import tkinter
 
 window = tkinter.Tk()
 
-# The model.
+# The model
 counter = tkinter.IntVar()
 counter.set(0)
 
-# Two controllers.
+# Two controllers
 def click_up():
     counter.set(counter.get() + 1)
 def click_down():
     counter.set(counter.get() - 1)
 
-# The views.
+# The views
 frame = tkinter.Frame(window)
 frame.pack()
 button = tkinter.Button(frame, text='Up', command=click_up)

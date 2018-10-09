@@ -1,3 +1,4 @@
+# mytk12.py
 import tkinter
 
 def click():
