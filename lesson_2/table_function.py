@@ -11,9 +11,9 @@ def get_element(val):
         elif num == 80:
             return "Hg, Ртуть"
         else:
-            return "Не могу определить, что это."
+            return "Не могу определить, что это"
     else:
-        return "Введите значение."
+        return "Введите значение"
 
 value = input("Введите атомный номер элемента: ")
 print(get_element(value))

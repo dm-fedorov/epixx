@@ -6,7 +6,7 @@ def my_max(a, b):
     elif b > a:
         return b
     else:
-   return a
+        return a
 
 print("Введите два числа")
 num1 = int(input("Первое число: "))

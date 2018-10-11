@@ -2,9 +2,8 @@
 import tkinter
 
 def click():
-    label.config ( text=entry.get() )
+    label.config(text=entry.get())
     
-
 window = tkinter.Tk()
 
 frame = tkinter.Frame(window)
