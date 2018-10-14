@@ -1,5 +1,5 @@
 # class3.py
-class Person():
+class Person:
     name = ""
     def __init__(self):
         print("Создан человек")

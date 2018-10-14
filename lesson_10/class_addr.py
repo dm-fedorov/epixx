@@ -1,6 +1,6 @@
 # class_addr.py
 # определяем шаблон адреса
-class Address():
+class Address:
     name = ""
     line1 = ""
     line2 = ""

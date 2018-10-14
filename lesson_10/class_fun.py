@@ -11,7 +11,7 @@ def print_address(address):
 
 if __name__ == '__main__':
     # определяем шаблон адреса
-    class Address():
+    class Address:
         name = ""
         line1 = ""
         line2 = ""

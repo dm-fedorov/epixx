@@ -11,7 +11,7 @@ class Point:
         return abs (self.x-self.y) 
 
 
-class Circle (Point):
+class Circle(Point):
     def __init__(self, radius, x=0, y=0):
         super().__init__(x, y)
         self.radius = radius
@@ -30,11 +30,11 @@ circle.radius = 3
 circle.x = 12
 a = Circle(4, 5, 6)
 b = Circle(4, 5, 6)
-print (str (a))
-print (str (b))
+print(str(a))
+print(str(b))
 
-print (a == b)
-print (a == circle)
-print (a != circle)
+print(a == b)
+print(a == circle)
+print(a != circle)
 
-print (circle.func ())
+print(circle.func())

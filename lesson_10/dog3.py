@@ -1,24 +1,23 @@
 # dog3.py
 # Создаем описание собаки
-class Dog():
-    name = ""
+class Dog:    
     # Конструктор
     # Вызывается в момент создания объекта этого типа
-    def __init__ (self, newName):
-        self.name = newName
+    def __init__(self, new_name='Собака без имени'):        
+        self.name = new_name
     # Можем в любой момент вызвать этот метод и изменить имя:
-    def setName (self, newName):
-        self.name = newName
+    def setName(self, new_name):
+        self.name = new_name
     # Можем в любой момент вызвать этот метод и узнать имя:
-    def getName (self):
+    def getName(self):
         return self.name
 
 # Создаем конкретную собаку
-myDog = Dog("Тузик")
+my_dog = Dog("Тузик")
 # Вывести имя собаки, убедиться, что оно было установлено
-print(myDog.getName())
+print(my_dog.getName())
 # Изменили имя собаки
-myDog.setName("Шарик")
+my_dog.setName("Шарик")
 # Посмотрели изменения
-print(myDog.getName())
+print(my_dog.getName())
 

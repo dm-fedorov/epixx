@@ -1,18 +1,19 @@
 # class4.py
-class Person():
+class Person:
     name = ""
-    def __init__ (self):
+    def __init__(self):
         print("Создан человек")
 
-class Employee (Person):
+class Employee(Person):
     job_title = ""
     def __init__(self):
-        Person.__init__ (self)
+        Person.__init__(self)
+        #super().__init__(self)
         print("Создан работник")
 
 class Customer(Person):
     email = ""
-    def __init__ (self):
+    def __init__(self):
         Person.__init__(self)
         print("Создан покупатель")
 

@@ -1,18 +1,14 @@
 # dog2.py
-class Dog():
-    name = ""
+class Dog:    
     # Конструктор
     # Вызывается на момент создания объекта этого типа
-    def __init__ (self, newName):
-        self.name = newName
+    def __init__ (self, new_name='Собака без имени'):
+        self.name = new_name
 
 # Создаем собаку
-myDog = Dog("Spot")
+my_dog = Dog("Шарик")
 # Вывести имя собаки, убедиться, что оно было установлено 
 # (так обычно не делают!)
-
-print(myDog.name)
-# Эта строка выдаст ошибку, потому что
-# конструктору не было передано имя
-herDog = Dog()
-
+print(my_dog.name)
+her_dog = Dog()
+print(her_dog.name)

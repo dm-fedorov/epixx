@@ -20,5 +20,4 @@ if __name__ == '__main__':
     label = tkinter.Label(frame, textvariable=counter)
     label.pack()
 
-    # Start the machinery!
     window.mainloop()

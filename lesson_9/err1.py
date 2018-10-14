@@ -1,8 +1,8 @@
 # err1.py
 try:
-    x = int(input("Enter number: "))
+    x = int(input("Введите число: "))
     print(5/x)
 except ZeroDivisionError:
-    print("Error dividing by zero")
+    print("Ошибка деления на нуль")
 except ValueError:
-    print("Error converting to a number")
+    print("Ошибка преобразования типов")
