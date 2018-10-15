@@ -17,11 +17,10 @@ def print_address2(name, line1, line2, city, state, zip1, zip2):
     print(city + ", " + state + " " + zip1 + " " + zip2)
 
 if __name__ == '__main__':
-    addr_name = "John Smith"
-    addr_line1 = "1122 Main Street"
-    addr_line2 = ""
-    addr_city = "Panama City Beach"
-    addr_state = "FL"
+    addr_name = "Иван Иванов"
+    addr_line1 = "Улица"
+    addr_line2 = "Площадь"
+    addr_city = "СПб"    
     addr_zip = "32407"
     # добавили индекс
     addr_zip2 = "678900"

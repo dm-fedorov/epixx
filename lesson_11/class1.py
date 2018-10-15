@@ -1,23 +1,24 @@
 # class1.py
-class Person():
-    name = ""
+class Person:
+    pass
 
+# наследование полей класса Person
 class Employee(Person):
-    job_title = ""
+    pass
 
 class Customer(Person):
-    email = ""
+    pass
 
-johnSmith = Person()
-johnSmith.name = "John Smith"
+person = Person()
+#person.name = "Иван Иванов"
 
-janeEmployee = Employee()
-janeEmployee.name = "Jane Employee"
-janeEmployee.job_title = "Web Developer"
+emp = Employee()
+emp.name = "Галина Семенова"
+emp.job_title = "Web Developer"
 
-bobCustomer = Customer()
-bobCustomer.name = "Bob Customer"
-bobCustomer.email = "send_me@spam.com"
+cust = Customer()
+cust.name = "Игорь Петров"
+cust.email = "send_me@spam.com"
 
-print(janeEmployee.name)
-print(bobCustomer.name)
+print(emp.name)
+print(cust.name)

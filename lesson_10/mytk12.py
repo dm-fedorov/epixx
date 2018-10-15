@@ -6,6 +6,8 @@ def click():
     
 window = tkinter.Tk()
 
+window.title('Простое окно')
+
 frame = tkinter.Frame(window)
 frame.pack()
 
