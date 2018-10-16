@@ -7,6 +7,7 @@ class Dog:
 
 # Конкретная собака:        
 my_dog = Dog()
+# определяем имя собаки
 my_dog.name = "Шарик"
 print(my_dog.name)
 my_dog.weight = 20

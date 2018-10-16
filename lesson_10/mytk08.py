@@ -3,17 +3,17 @@ import tkinter
 
 window = tkinter.Tk()
 
-# The model
+# Модель
 counter = tkinter.IntVar()
 counter.set(0)
 
-# Two controllers
+# Контроллеры
 def click_up():
     counter.set(counter.get() + 1)
 def click_down():
     counter.set(counter.get() - 1)
 
-# The views
+# Виды
 frame = tkinter.Frame(window)
 frame.pack()
 button = tkinter.Button(frame, text='Up', command=click_up)

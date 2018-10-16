@@ -21,10 +21,10 @@ if __name__ == '__main__':
     addr_line1 = "Улица"
     addr_line2 = "Площадь"
     addr_city = "СПб"    
-    addr_zip = "32407"
+    addr_zip = "32407"    
+    print_address(addr_name, addr_line1, addr_line2, addr_city, addr_state, addr_zip)
     # добавили индекс
     addr_zip2 = "678900"
-    print_address(addr_name, addr_line1, addr_line2, addr_city, addr_state, addr_zip)
     # обновленная версия функции:
     print_address2(addr_name, addr_line1, addr_line2, addr_city, addr_state, addr_zip, addr_zip2)
 

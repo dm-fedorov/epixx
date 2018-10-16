@@ -9,14 +9,14 @@ def print_address(address):
         print(address.line2)
     print(address.city + ", " + address.zip)
 
-# определяем шаблон адреса
+# Определяем "шаблон" (класс) для адреса
 class Address:
     pass
 
-# Создать экземпляр (объект) класса (типа) Address: 
+# Создаем экземпляр (объект) класса (типа) Address: 
 home = Address()
 
-# Задать поля объекта:
+# Задаем поля объекта:
 home.name = "Иван Иванов"
 home.line1 = "Улица"
 home.line2 = "Район"

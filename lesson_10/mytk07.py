@@ -1,16 +1,16 @@
 # mytk07.py
 import tkinter
 
-# The controller
+# Контроллер
 def click():
     counter.set(counter.get() + 1)
 
 if __name__ == '__main__':
     window = tkinter.Tk()
-    # The model
+    # Модель
     counter = tkinter.IntVar()
     counter.set(0)
-    # The views
+    # Вид
     frame = tkinter.Frame(window)
     frame.pack()
 

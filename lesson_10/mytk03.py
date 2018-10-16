@@ -4,7 +4,7 @@ window = tkinter.Tk()
 data = tkinter.StringVar()
 data.set('Данные в окне')
 
-label = tkinter.Label(window, textvariable = data)
+label = tkinter.Label(window, textvariable=data)
 label.pack()
 
 window.mainloop()
