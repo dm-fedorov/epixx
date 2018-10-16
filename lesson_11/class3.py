@@ -1,19 +1,37 @@
 # class3.py
 class Person:
-    name = ""
-    def __init__(self):
-        print("Создан человек")
+    def __init__(self, name='Человек без имени'):
+        self.name = name
+        self.age = 0
+    def say(self):
+        print("{0} говорит".format(self.name))
 
 class Employee(Person):
-    job_title = ""
-    def __init__(self):
-        print("Создан работник")
-
+    def __init__(self, name):
+        super().__init__(name)
+        self.job_title = 'Безработный'
+    def __str__(self):
+        return '{0} {1}'.format(self.name, self.job_title)                
+    def set_job(self, job_title='Безработный'):
+        self.job_title = job_title        
+    def get_job(self):
+        print(self.name, self.job_title)    
+    
 class Customer(Person):
-    email = ""
-    def __init__(self):
-        print("Создан покупатель")
+    def __init__(self, name):
+        super().__init__(name)
+        self.email = 'Нет почты'
+    def __str__(self):
+        return '{0} {1}'.format(self.name, self.email)
+    def set_email(self, email='Нет почты'):
+        self.email = email        
+    def get_email(self):
+        print(self.name, self.email)
 
-johnSmith = Person()
-janeEmployee = Employee()
-bobCustomer = Customer()
+person = Person('Иван')
+
+emp = Employee('Игорь')
+print(emp)
+
+cust = Customer('Петр')
+print(cust)
