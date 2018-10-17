@@ -5,7 +5,7 @@ def get_int(msg):
             x = int(input(msg))
             return x            
         except ValueError:
-            print("Error converting to a number")
+            print("Ошибка преобразования типа. Повторите ввод")
 
 if __name__ == "__main__":
     print(get_int("Enter: "))

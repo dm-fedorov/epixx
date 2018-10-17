@@ -6,6 +6,7 @@ def read_url(url):
             text = webpage.read().decode('utf-8')
         return text
     except:
+        # логирование
         return ''
 
 if __name__ == "__main__":    

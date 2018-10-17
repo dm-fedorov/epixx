@@ -1,8 +1,12 @@
 # file_reader_with_plan.py
-with open('plan.txt', 'r') as file:
-    planets = file.readlines()
+try:
+    with open('plan.txt', 'r') as file:
+        planets = file.readlines()
 
-print(planets)
+    print(planets)
 
-for planet in reversed(planets):
-    print(planet.strip())
+    for planet in reversed(planets):
+        print(planet.strip())
+
+except Exception as e:
+    print(e)
