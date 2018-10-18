@@ -5,7 +5,7 @@ def file_write(file):
             count = output_file.write("Hello!\n")
         return count
     except:
-        # записывать в log
+        # как узнаем о состоянии ошибки
         return 0
 
 if __name__ == '__main__':

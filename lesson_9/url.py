@@ -10,8 +10,7 @@ def url_open(url):
                 line = line.strip()
                 lst.append(line)
         return lst
-    except:
-        # логирование
+    except:        
         return ""
         
 if __name__ == '__main__':
