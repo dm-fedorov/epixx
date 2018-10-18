@@ -8,4 +8,4 @@ def get_int(msg):
             print("Ошибка преобразования типа. Повторите ввод")
 
 if __name__ == "__main__":
-    print(get_int("Enter: "))
+    print(get_int("Введите целое число: "))

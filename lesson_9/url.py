@@ -1,6 +1,5 @@
 # url.py
 import urllib.request
-
 def url_open(url):
     lst = list()    
     try:     
@@ -11,7 +10,7 @@ def url_open(url):
                 lst.append(line)
         return lst
     except:        
-        return ""
+        return None 
         
 if __name__ == '__main__':
     print(url_open("http://dfedorov.spb.ru/python3/src/romeo.txt"))

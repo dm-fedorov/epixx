@@ -1,3 +1,13 @@
 # file_append_with.py
-with open("top.txt", 'a') as output_file:
-    output_file.write("Hello!\n")
+def file_append(file, string):
+    '''
+    Добавление строки string в файл file.
+    '''
+    try:
+        with open(file, 'a') as output_file:
+            output_file.write(string)
+    except Exception as error:
+        print(error)
+
+if __name__ == '__main__':
+    file_append('top.txt', "Hello!\n")    

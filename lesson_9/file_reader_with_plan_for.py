@@ -6,8 +6,8 @@ def file_reader(file):
             for line in file:                
                 result[line] = len(line.strip())
         return result
-    except Exception as e:
-        return dict()
+    except:
+        return None
         
 if __name__ == '__main__':
     print(file_reader('plan.txt'))

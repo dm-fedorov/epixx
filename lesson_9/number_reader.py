@@ -8,8 +8,8 @@ def reader(filename):
         with open(filename) as f_obj:
             numbers = json.load(f_obj)
         return numbers
-    except Exception as e:
-        return e
+    except:
+        return None
 
 if __name__ == "__main__":    
     print(reader('numbers.json'))

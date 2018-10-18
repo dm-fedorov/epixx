@@ -6,7 +6,7 @@ def read_url(url):
             text = webpage.read().decode('utf-8')
         return text
     except:
-        return ''
+        return None
 
 if __name__ == "__main__":    
     print(read_url("http://dfedorov.spb.ru/python3/src/romeo.txt"))

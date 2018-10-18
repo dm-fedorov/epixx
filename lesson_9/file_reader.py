@@ -1,5 +1,10 @@
 # file_reader.py
-file = open('example_text.txt', 'r')
-contents = file.read()
-print(contents)
-file.close()
+def file_reader(path):
+    file = open(path, 'r')
+    contents = file.read()
+    file.close()
+
+    return contents
+
+if __name__ == '__main__':
+    print(file_reader('example_text.txt'))

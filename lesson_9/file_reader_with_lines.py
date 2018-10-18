@@ -1,4 +1,12 @@
 # file_reader_with_lines.py
-with open('example_text.txt', 'r') as file:
-    lines = file.readlines()
-print(lines)
+def file_reader(file):
+    try:
+        with open(file, 'r') as file:
+            lines = file.readlines()
+        return lines
+    except:
+        return None
+
+if __name__ == '__main__':    
+    print(file_reader('example_text.txt'))
+    
