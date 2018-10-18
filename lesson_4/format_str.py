@@ -8,6 +8,7 @@ def f2(var1, var2):
 def f3(var1, var2):
     return f'{var1} и {var2}'
 
-print(f1('мир', 'труд'))
-print(f2('мир', 'труд'))
-print(f3('мир', 'труд'))
+if __name__ == '__main__':
+    print(f1('мир', 'труд'))
+    print(f2('мир', 'труд'))
+    print(f3('мир', 'труд'))

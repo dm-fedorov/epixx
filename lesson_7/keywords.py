@@ -7,8 +7,9 @@ def total(initial=5, *numbers, **keywords):
         count += keywords[key] 
     return count 
 
-print(total()) # initial=5
-print(total(2, 1)) # initial=2
-print(total(2, 1, key=3)) # initial=2
-print(total(10, 1, 2, 3, vegetables=50, fruits=100)) 
+if __name__ == '__main__':
+    print(total()) # initial=5
+    print(total(2, 1)) # initial=2
+    print(total(2, 1, key=3)) # initial=2
+    print(total(10, 1, 2, 3, vegetables=50, fruits=100)) 
 

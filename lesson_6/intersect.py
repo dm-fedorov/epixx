@@ -6,8 +6,9 @@ def intersect(seq1, seq2):
             res.append(x)
     return res
 
-print(intersect([1, 2, 4], [2, 5, 7]))
-print(intersect("AAAAB", "CCCCCBC"))
+if __name__ == '__main__':
+    print(intersect([1, 2, 4], [2, 5, 7]))
+    print(intersect("AAAAB", "CCCCCBC"))
 
 
 
