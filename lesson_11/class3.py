@@ -8,7 +8,7 @@ class Person:
 
 class Employee(Person):
     def __init__(self, name):
-        super().__init__(name)
+        Person.__init__(self)
         self.job_title = 'Безработный'
     def __str__(self):
         return '{0} {1}'.format(self.name, self.job_title)                
@@ -19,7 +19,7 @@ class Employee(Person):
     
 class Customer(Person):
     def __init__(self, name):
-        super().__init__(name)
+        Person.__init__(self)
         self.email = 'Нет почты'
     def __str__(self):
         return '{0} {1}'.format(self.name, self.email)

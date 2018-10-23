@@ -8,7 +8,7 @@ class Person:
 
 class Employee(Person):
     def __init__(self, name):
-        super().__init__(name)
+        Person.__init__(self)
         self.job_title = 'Безработный'
     def set_job(self, job_title='Безработный'):
         self.job_title = job_title        
@@ -17,7 +17,7 @@ class Employee(Person):
     
 class Customer(Person):
     def __init__(self, name):
-        super().__init__(name)
+        Person.__init__(self)
         self.email = 'Нет почты'
     def set_email(self, email='Нет почты'):
         self.email = email        
