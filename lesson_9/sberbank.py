@@ -11,9 +11,9 @@ def money_reader(what, where, when):
                         lst = row[2].split('-')                    
                         if lst[0] == when:                    
                             money.append(int(row[3]))
-        return sum(money)/len(money)     
-    except:
-        return None
+        return round(sum(money)/len(money), 2)     
+    except Exception as e:
+        return e
 
 if __name__ == '__main__':
     for year in range(2015, 2019):

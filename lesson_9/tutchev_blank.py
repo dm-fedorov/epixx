@@ -9,8 +9,8 @@ def get_html(text, img):
     try:
         # здесь ваш код
 
-    except Exception:
-        return None        
+    except Exception as e:
+        return e        
     
 if __name__ == "__main__":
     get_html("http://dfedorov.spb.ru/python/files/tutchev.txt", "http://dfedorov.spb.ru/python/files/tutchev.jpg")   

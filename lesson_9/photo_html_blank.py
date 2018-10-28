@@ -8,8 +8,8 @@ def get_html_from_dir_photo(mydir):
     # здесь ваш код
     try:
         # здесь ваш код        
-    except Exception as error:
-        print(error)        
+    except Exception as e:
+        print(e)        
     else:
         print("Файл создан!")
 

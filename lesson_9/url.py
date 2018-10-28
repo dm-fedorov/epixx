@@ -9,8 +9,8 @@ def url_open(url):
                 line = line.strip()
                 lst.append(line)
         return lst
-    except:        
-        return None 
+    except Exception as e:        
+        return e
         
 if __name__ == '__main__':
     print(url_open("http://dfedorov.spb.ru/python3/src/romeo.txt"))

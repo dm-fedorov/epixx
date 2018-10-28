@@ -4,8 +4,8 @@ def file_reader(file):
         with open(file, 'r') as file:
             lines = file.readlines()
         return lines
-    except:
-        return None
+    except Exception as e:
+        return e
 
 if __name__ == '__main__':    
     print(file_reader('example_text.txt'))
