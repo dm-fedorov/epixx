@@ -1,10 +1,8 @@
 # my_abs.py
 def my_abs(x):
     """Вычисление абсолютного значения"""
-    if x > 0:
-        return x
-    elif x == 0:
-        return 0
+    if x >= 0:
+        return x    
     else:
         return -x
 
