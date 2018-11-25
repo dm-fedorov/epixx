@@ -15,19 +15,29 @@ def in_local_add_element(element):
     print('изменяем и возвращаем локальный список')
     return lst
 
+def global_lst(element):
+    print('вызов global_lst')
+    global lst
+    lst = []
+    lst.append(element)
+    print('изменяем глобальный список')
+    return lst
+
 def global_add_element(element):
     print('вызов global_add_element')
     lst.append(element)        
 
 if __name__ == '__main__':
     lst = [4, 6]
-    print('lst', lst)    
+    print('глобальный lst: ', lst)    
     print(local_add_element(lst, '5'))
-    print('lst', lst)    
+    print('глобальный lst: ', lst)    
     print(in_local_add_element('5'))
-    print('lst', lst)        
+    print('глобальный lst: ', lst)        
+    global_lst('7')
+    print('глобальный lst: ', lst)
     global_add_element('5')
-    print('lst', lst)        
+    print('глобальный lst: ', lst)        
     
     
     
