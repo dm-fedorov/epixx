@@ -1,5 +1,5 @@
 # keywords.py
-def total(init=1, *numbers, **keywords):    
+def total(init=0, *numbers, **keywords):    
     """
     Когда мы объявляем параметр со звёздочкой (например, *param),
     все позиционные аргументы начиная с этой позиции и до конца
@@ -16,7 +16,7 @@ def total(init=1, *numbers, **keywords):
     return count 
 
 if __name__ == '__main__':
-    print(total()) # init=1
+    print(total()) # init=0
     print(total(init=7)) # init=7
     print(total(2)) # init=2
     print(total(2, 1))
