@@ -1,5 +1,5 @@
 # extra_number.py
-def total(initial=5, *numbers, extra_number): 
+def total(init=5, *numbers, extra_number): 
     """
     Если некоторые ключевые параметры должны быть доступны только по ключу,
     а не как позиционные аргументы, их можно объявить после параметра со звёздочкой.
@@ -9,7 +9,7 @@ def total(initial=5, *numbers, extra_number):
     обращение к функции вызовет ошибку.
 
     """
-    count = initial 
+    count = init 
     for number in numbers: 
         count += number 
     count += extra_number 
