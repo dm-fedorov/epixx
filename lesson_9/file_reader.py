@@ -1,7 +1,6 @@
 # file_reader.py
-def file_reader(path):
-    contents = None
-    try:
+def file_reader(path):    
+    try:        
         file = open(path, 'r')
         contents = file.read()
         file.close()
