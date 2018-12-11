@@ -22,6 +22,7 @@ my_dog = Dog()
 my_dog.set_name("Шарик")
 # Сколько ног у собаки (доступ к атрибуту класса):
 print('У {0}а {1} ноги'.format(my_dog.get_name(), my_dog.legs))
+
 # Создаем еще одну конкретную собаку
 her_dog = Dog("Бобик")
 print('У {0}а {1} ноги'.format(her_dog.get_name(), her_dog.legs))
