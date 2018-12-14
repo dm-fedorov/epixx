@@ -2,8 +2,8 @@
 def get_html(text, img):    
     '''
     Функция для генерации html-документа.
-
-    text - файл с текстом, img - файл с изображением.
+    text: файл с текстом
+    img: файл с изображением
     '''
     import urllib.request
     try:
