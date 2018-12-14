@@ -5,9 +5,13 @@ def get_html_from_dir_photo(mydir):
     находящиеся в указанной директории mydir.
     '''
     import os
+    
     # здесь ваш код
+    
     try:
-        # здесь ваш код        
+        
+        # здесь ваш код
+        
     except Exception as e:
         print(e)        
     else:

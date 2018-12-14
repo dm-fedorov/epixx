@@ -17,5 +17,7 @@ def get_forecast(city):
 
 if __name__ == '__main__':    
     import pprint
+    print('St. Petersburg:')
     pprint.pprint(get_forecast('St. Petersburg'))
+    print('Moscow:')
     pprint.pprint(get_forecast('Moscow'))

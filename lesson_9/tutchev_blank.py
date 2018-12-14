@@ -6,13 +6,19 @@ def get_html(text, img):
     img: файл с изображением
     '''
     import urllib.request
+
+    # здесь ваш код
+
     try:
         # здесь ваш код
 
-    except Exception as e:
-        return e        
+    except Exception as error:
+        print(error)        
+    else:
+        print("Файл создан!")      
     
 if __name__ == "__main__":
-    get_html("http://dfedorov.spb.ru/python/files/tutchev.txt", "http://dfedorov.spb.ru/python/files/tutchev.jpg")   
-
+    file = "http://dfedorov.spb.ru/python/files/tutchev.txt"
+    pic = "http://dfedorov.spb.ru/python/files/tutchev.jpg"
+    get_html(file, pic)   
     
